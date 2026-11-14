@@ -1,0 +1,113 @@
+
+#table_container {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    width: 700px;
+    margin: 40px auto;
+}
+
+#form_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+}
+
+.form_label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #000000;
+}
+
+.form_field {
+    padding: 3px 6px;
+    border: 1px solid #7f9db9;
+    border-radius: 2px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+#form_nom, #form_prenom {
+    width: 145px;
+}
+
+#form_points {
+    width: 110px;
+}
+
+#form_container button {
+    padding: 3px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/*  Mise en forme générale du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0078b8;
+    color: #ffffff;
+    padding: 8px 12px;
+    border: 1px solid #0078b8;
+    font-size: 14px;
+}
+
+/*  Style des cellules de données */
+td {
+    padding: 8px 12px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* 6. Classes spécifiques pour les colonnes */
+.col_number {
+    text-align: center;
+    width: 60px;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 70px;
+}
+
+.col_chkbox input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/*  Espace Résumé  */
+#container_summary {
+    background-color: #ededed;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #333333;
+}
+
+#container_summary p {
+    margin: 0;
+}
+
+/*  Bouton sous l'espace résumé (Console Tableau) */
+#table_container > button {
+    margin-top: 10px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+

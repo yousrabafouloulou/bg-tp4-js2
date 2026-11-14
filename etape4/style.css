@@ -1,0 +1,75 @@
+
+/* 1) Conteneur principal */
+#table_container {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    width: 700px;
+    margin: 40px auto;
+}
+
+/* 2) Mise en forme générale du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 3) Style des en-têtes de colonnes */
+th {
+    background-color: #0078b8;
+    color: #ffffff;
+    padding: 8px 12px;
+    border: 1px solid #0078b8;
+    font-size: 14px;
+}
+
+/* 4) Style des cellules de données */
+td {
+    padding: 8px 12px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* 5) Classes spécifiques pour les colonnes */
+.col_number {
+    text-align: center;
+    width: 60px;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 70px;
+}
+
+.col_chkbox input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* 6) Espace Résumé */
+#container_summary {
+    background-color: #ededed;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #333333;
+}
+
+#container_summary p {
+    margin: 0;
+}
+
+/* 7) Boutons sous l'espace résumé */
+#table_container button {
+    margin-top: 10px;
+    margin-right: 6px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+

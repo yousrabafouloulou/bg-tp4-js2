@@ -1,0 +1,193 @@
+/*  Conteneur principal */
+#table_container {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    width: 700px;
+    margin: 40px auto;
+}
+
+#form_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+}
+
+.form_label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #000000;
+}
+
+.form_field {
+    padding: 3px 6px;
+    border: 1px solid #7f9db9;
+    border-radius: 2px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+#form_nom, #form_prenom {
+    width: 145px;
+}
+
+#form_points {
+    width: 110px;
+}
+
+/* Barre de recherche (Fonctionnalité avancée) */
+#search_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.search_label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 8px;
+    color: #333333;
+}
+
+#search_input {
+    flex: 1;
+    padding: 4px 8px;
+    font-size: 13px;
+    border: 1px solid #7f9db9;
+    border-radius: 2px;
+}
+
+/*  Mise en forme générale du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0078b8;
+    color: #ffffff;
+    padding: 8px 12px;
+    border: 1px solid #0078b8;
+    font-size: 14px;
+}
+
+/*  Style des cellules de données */
+td {
+    padding: 8px 12px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    color: #333333;
+}
+
+.col_number {
+    text-align: center;
+    width: 60px;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 75px;
+}
+
+.col_chkbox input[type="checkbox"] {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+th.col_chkbox input[type="checkbox"] {
+    margin-left: 4px;
+}
+
+#container_summary {
+    background-color: #ededed;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #333333;
+}
+
+#container_summary p {
+    margin: 0;
+}
+
+/*  Conteneur des boutons du bas */
+#container_btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.btn-add {
+    background-color: #008000;
+    color: #ffffff;
+    border: 1px solid #006400;
+    padding: 3px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #006400;
+}
+
+.btn-consol {
+    background-color: #b8860b;
+    color: #ffffff;
+    border: 1px solid #8b6508;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-consol:hover {
+    background-color: #996f08;
+}
+
+.btn-del {
+    background-color: #e51c23;
+    color: #ffffff;
+    border: 1px solid #b71c1c;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-del:hover {
+    background-color: #c62828;
+}
+
+.btn-sort {
+    background-color: #0078b8;
+    color: #ffffff;
+    border: 1px solid #005a8c;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-sort:hover {
+    background-color: #005a8c;
+}
+
