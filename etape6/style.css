@@ -40,28 +40,6 @@
     width: 110px;
 }
 
-/* Barre de recherche (Fonctionnalité avancée) */
-#search_container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.search_label {
-    font-size: 13px;
-    font-weight: bold;
-    margin-right: 8px;
-    color: #333333;
-}
-
-#search_input {
-    flex: 1;
-    padding: 4px 8px;
-    font-size: 13px;
-    border: 1px solid #7f9db9;
-    border-radius: 2px;
-}
-
 /*  Mise en forme générale du tableau */
 table {
     width: 100%;
@@ -101,10 +79,6 @@ td {
 .col_chkbox input[type="checkbox"] {
     cursor: pointer;
     vertical-align: middle;
-}
-
-th.col_chkbox input[type="checkbox"] {
-    margin-left: 4px;
 }
 
 #container_summary {
@@ -175,19 +149,3 @@ th.col_chkbox input[type="checkbox"] {
 .btn-del:hover {
     background-color: #c62828;
 }
-
-.btn-sort {
-    background-color: #0078b8;
-    color: #ffffff;
-    border: 1px solid #005a8c;
-    padding: 4px 12px;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.btn-sort:hover {
-    background-color: #005a8c;
-}
-

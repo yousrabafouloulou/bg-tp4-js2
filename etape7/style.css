@@ -1,0 +1,195 @@
+/* ==========================================================================
+   TP4 (Partie 2) - Etape 7 : 3 Nouvelles Fonctionnalités
+   ========================================================================== */
+
+/* Conteneur principal */
+#table_container {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    width: 760px;
+    margin: 35px auto;
+}
+
+#form_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+}
+
+.form_label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #000000;
+}
+
+.form_field {
+    padding: 3px 6px;
+    border: 1px solid #7f9db9;
+    border-radius: 2px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+#form_nom, #form_prenom {
+    width: 155px;
+}
+
+#form_points {
+    width: 110px;
+}
+
+.table-hint {
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+/* Mise en forme du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0078b8;
+    color: #ffffff;
+    padding: 8px 12px;
+    border: 1px solid #0078b8;
+    font-size: 14px;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    color: #333333;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+/* Curseur pointer au survol d'une ligne pour inviter au double-clic */
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover td {
+    background-color: #f7fbff;
+}
+
+/* Animation surbrillance du gagnant du tirage au sort */
+tbody tr.winner-row td {
+    background-color: #fff3cd !important;
+    color: #856404 !important;
+    font-weight: bold;
+    border-color: #ffeeba !important;
+}
+
+.col_number {
+    text-align: center;
+    width: 55px;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 65px;
+}
+
+.col_chkbox input[type="checkbox"] {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Espace Résumé */
+#container_summary {
+    background-color: #ededed;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #333333;
+}
+
+#container_summary p {
+    margin: 0;
+}
+
+/* Conteneur des boutons d'actions */
+#container_btn {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Styles communs des boutons */
+#container_btn button,
+.btn-add {
+    padding: 5px 12px;
+    font-size: 12.5px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+#container_btn button:hover,
+.btn-add:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Bouton Ajouter (Vert) */
+.btn-add {
+    background-color: #008000;
+    color: #ffffff;
+    border: 1px solid #006400;
+}
+
+/* Bouton Console Tableau (Marron / Doré) */
+.btn-consol {
+    background-color: #b8860b;
+    color: #ffffff;
+    border: 1px solid #8b6508;
+}
+
+/* Bouton Supprimer (Rouge) */
+.btn-del {
+    background-color: #e51c23;
+    color: #ffffff;
+    border: 1px solid #b71c1c;
+}
+
+/* [FONCTIONNALITÉ 1] Bouton Télécharger PDF (Bordeaux / Rouge PDF) */
+.btn-pdf {
+    background-color: #b91c1c;
+    color: #ffffff;
+    border: 1px solid #991b1b;
+}
+
+/* [FONCTIONNALITÉ 2] Bouton Modifier / Update (Bleu Ciel / Cyan) */
+.btn-edit {
+    background-color: #0284c7;
+    color: #ffffff;
+    border: 1px solid #0369a1;
+}
+
+/* [FONCTIONNALITÉ 3] Bouton Tirage au sort (Violet Festif) */
+.btn-lotto {
+    background-color: #7c3aed;
+    color: #ffffff;
+    border: 1px solid #6d28d9;
+}

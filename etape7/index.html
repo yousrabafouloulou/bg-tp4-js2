@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>TP4 JS (Part 2) - Etape 7 : 3 Nouvelles Fonctionnalités Avancées</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bibliothèque jsPDF pour la génération et le téléchargement direct du PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+    <div id="table_container">
+
+        <div id="form_container">
+            <div class="form_group">
+                <label class="form_label">Nom:</label>
+                <input type="text" id="form_nom" class="form_field"/>
+            </div>
+            <div class="form_group">
+                <label class="form_label">Prénom:</label>
+                <input type="text" id="form_prenom" class="form_field"/>
+            </div>
+            <div class="form_group">
+                <label class="form_label">Points:</label>
+                <input type="number" id="form_points" class="form_field"/>
+            </div>
+            <!-- Événement onclick appelant doNewData() (slides 21, 129 et 133) -->
+            <button class="btn-add" onclick="doNewData()">Ajouter</button>
+        </div>
+
+        <p class="table-hint">💡 Astuce : Vous pouvez aussi <strong>double-cliquer</strong> sur une ligne pour modifier toutes ses informations (Nom, Prénom, Points) !</p>
+
+        <!-- Tableau des personnes -->
+        <table>
+            <thead>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_number">Points</th>
+                    <th class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Espace Résumé -->
+        <div id="container_summary">
+            <p id="p1">0 ligne(s)</p>
+            <p id="p2"></p>
+            <p id="p3">Totale point(s)= 0</p>
+        </div>
+
+        <!-- Boutons d'actions et fonctionnalités -->
+        <div id="container_btn">
+            <!-- [FONCTIONNALITÉ 1] Télécharger le tableau en fichier PDF réel -->
+            <button class="btn-pdf" onclick="telechargerPDF()">📄 Télécharger PDF</button>
+
+            <!-- [FONCTIONNALITÉ 2] Modifier le Nom, Prénom et Points de la personne sélectionnée (Update du CRUD) -->
+            <button class="btn-edit" onclick="updatePersonne()">✏️ Modifier</button>
+
+            <!-- [FONCTIONNALITÉ 3] Tirage au sort aléatoire d'un gagnant avec animation -->
+            <button class="btn-lotto" onclick="tirerGagnant()">🎲 Tirage au sort</button>
+
+            <!-- Boutons de base de l'Étape 6 -->
+            <button class="btn-consol" onclick="consoleTableau()">Console Tableau</button>
+            <button class="btn-del" onclick="deleteRow()">Supprimer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
